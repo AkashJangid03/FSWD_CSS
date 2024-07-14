@@ -1,0 +1,65 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;    
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'header header header'
+        'sidebar main main'
+        'sidebar aside1 aside2'
+        'footer footer footer';
+        grid-gap: 10px;
+        padding: 10px;
+}
+/* child is called */
+.grid-container > div {
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    background-color: #6fa3ef;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #ffdb4b;
+}
+
+.main {
+    grid-area: main;
+    background-color: #ff704b;
+}
+
+.aside:nth-child(4) {
+    grid-area: aside1;
+    background-color: #82e0aa;
+}
+
+.aside:nth-child(5) {
+    grid-area: aside2;
+    background-color: #f9ef9f;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #bfc9ca;
+}
+
+
+@media (max-width: 550px) {
+    .grid-container {
+        grid-template-areas:  
+         'header'
+         'sidebar'
+         'main'
+         'aside1'
+         'aside2'
+         'footer';
+    }
+}
