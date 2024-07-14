@@ -1,0 +1,42 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+        }
+
+        header h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .box {
+            width: 200px;
+            margin: auto;
+            padding: 30px;
+            text-align: center;
+            color: #333;
+        }
+
+        .border-box {
+            border: 2px solid #28A745;
+        }
+
+        .padding-box {
+            padding: 50px;
+            border: 2px solid #FFC107;
+        }
+
+        .border-box-effect {
+            border: 10px solid #DC3545;
+        }
+
+        .margin-box {
+            margin: 50px auto;
+            border: 2px solid #17A2B8;
+        }
