@@ -1,0 +1,48 @@
+<!-- 
+- Create a webpage with various form elements (input fields, checkboxes, radio buttons, select menus).
+- Style these form elements using CSS to improve their appearance and usability.
+- Include focus and validation styles for better user experience.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>Male</label>
+        <input type="radio" id="female" name="gender" value="female">Female</label>
+
+        <label for="hobbies">Hobbies:</label>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading" style="display:inline; font-weight:normal;">Reading</label>
+        <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+        <label for="traveling" style="display:inline; font-weight:normal;">Traveling</label>
+
+        <label for="job_role">Job Role:</label>
+        <select>
+            <option value="fd">Frontend Developer</option>
+            <option value="bd">Backend Developer</option>
+            <option value="fd">Fullstack Developer</option>
+            <option value="da">Data Analyast</option>
+            <option value="ix">UI/UX Developer</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
