@@ -1,0 +1,54 @@
+<!-- 
+- Create a webpage that demonstrates different CSS positioning techniques.
+- Use 'static', 'relative', 'absolute', 'fixed', and 'sticky positioning on various elements.
+- Show how these positioning methods affect the layout and flow of the document.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Techniques</title>
+    <link rel="stylesheet" href="position.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Positioning Techniques</h1>
+
+        <div class="static">
+            <h2>Static Positioning</h2>
+            <p>This element uses the default static positioning, meaning it follows the normal document flow.</p>
+        </div>
+
+        <div class="relative">
+            <h2>Relative Positioning</h2>
+            <p>This element is positioned relative to its normal position. It moves 20px down and right from its original position.</p>
+        </div>
+
+        <div class="absolute-container">
+            <h2>Absolute Positioning</h2>
+            <p>This container has an absolutely positioned child element.</p>
+            <div class="absolute">Absolute positioned element</div>
+        </div>
+
+        <div class="sticky-container">
+            <h2>Sticky Positioning</h2>
+            <p>This element is initially positioned relative to the normal flow, but it becomes fixed when scrolling reaches its container's edge.</p>
+            <div class="sticky">
+                Sticky positioned element
+            </div>
+            <div class="sticky-item">Item 1</div>
+            <div class="sticky-item">Item 2</div>
+            <div class="sticky-item">Item 3</div>
+            <div class="sticky-item">Item 4</div>
+            <div class="sticky-item">Item 5</div>
+        </div>
+
+        <div class="fixed">
+            <h2>Fixed Positioning</h2>
+            <p>This element is fixed to the viewport, so it stays in the same place even when scrolling.</p>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.static {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.relative {
+    background-color: #28a745;
+    color: white;
+    padding: 20px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    margin-bottom: 20px;
+}
+.absolute-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+.absolute {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: #dc3545;
+    color: white;
+    padding: 20px;
+}
+.fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffc107;
+    color: black;
+    padding: 20px;
+}
+.sticky {
+    position: sticky;
+    top: 20px;
+    background-color: #17a2b8;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.sticky-container {
+    height: 200px; /* To demonstrate scrolling */
+    overflow-y: auto;
+}
+.sticky-item {
+    background-color: #ffc107;
+    padding: 10px;
+    margin: 5px 0;
+}
