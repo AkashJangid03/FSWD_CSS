@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background-color: rgb(245, 245, 202);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    height: auto;
+    width: 300px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid black;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.5);
+}
+.box {
+    height: 150px;
+    width: 150px;
+    background-color: skyblue;
+    margin: auto;
+    border-radius: 30%;
+    transition: transform 0.5s ease;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.5);;
+}
+.box.box1:hover {
+    transform: translate(80px);
+}
+.box.box2:hover {
+    transform: rotate(180deg);
+}
+.box.box3:hover {
+    transform: scale(1.5);
+}
+.box.box4:hover {
+    transform: skew(20deg,20deg);
+}
